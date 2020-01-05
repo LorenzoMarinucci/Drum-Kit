@@ -11,10 +11,8 @@ const A=document.querySelector('#A');
 document.addEventListener('keypress', (e) => {
     const key=e.code;
     let boton;
-    console.log('entro');
     switch(key) {
         case "KeyA": {
-            console.log(key);
             let audio = new Audio('sounds/boom.wav');
             audio.play();
             boton=A;
@@ -71,7 +69,6 @@ document.addEventListener('keypress', (e) => {
     if (boton) {
         boton.classList.add('presionado');
         setTimeout(function(){boton.classList.remove('presionado')}, 100);
-        console.log('entrop');
     }
 })
 
