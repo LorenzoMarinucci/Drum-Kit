@@ -24,6 +24,11 @@ html {
     height: 130px;
 }
 
+div.presionado {
+    transform: scale(1.1);
+    border-color: red;
+}
+
 h1 {
     font-family: 'Helvetica', 'Arial';
     font-size: 100px;
